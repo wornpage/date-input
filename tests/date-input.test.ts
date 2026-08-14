@@ -20,4 +20,10 @@ describe('date input source', () => {
 		expect(source).toContain('{disabled}');
 		expect(source).toContain('autocomplete="off"');
 	});
+
+	test('keeps native date picking touch-safe without replacing the control', () => {
+		expect(source).toContain('@media (pointer: coarse)');
+		expect(source).toContain('min-height: 44px');
+		expect(source).toContain('touch-action: manipulation');
+	});
 });

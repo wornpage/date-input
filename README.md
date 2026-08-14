@@ -1,6 +1,6 @@
 # @wornpage/date-input
 
-Svelte 5 date input with shared app-shell styling and native date-picker semantics.
+Svelte 5 date input with shared app-shell styling and native date-picker semantics. It keeps a compact desktop field and uses a 44px minimum target on coarse pointers.
 
 <!-- wornpage-delivery:v2 source -->
 ## Delivery
@@ -40,3 +40,7 @@ npm install @wornpage/date-input
 | `min` | `string` | - | Minimum selectable date |
 | `max` | `string` | - | Maximum selectable date |
 | `step` | `string` | - | Native date step |
+
+## Interaction
+
+The component preserves the browser-native date picker. On touch-first devices it uses a 16px input font to avoid iOS zoom and a minimum 44px control height; desktop remains compact.

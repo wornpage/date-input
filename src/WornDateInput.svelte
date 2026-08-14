@@ -66,6 +66,7 @@
 		background: var(--cockpit-surface);
 		color: var(--cockpit-text);
 		cursor: text;
+		touch-action: manipulation;
 	}
 
 	.worn-date-input:focus {
@@ -85,6 +86,7 @@
 	@media (pointer: coarse) {
 		.worn-date-input {
 			font-size: 16px;
+			min-height: 44px;
 		}
 	}
 </style>
