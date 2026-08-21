@@ -23,6 +23,7 @@ describe('date input source', () => {
 
 	test('keeps native date picking touch-safe without replacing the control', () => {
 		expect(source).toContain('@media (pointer: coarse)');
+		expect(source).toMatch(/@media \(pointer: coarse\) \{\s*\.worn-date-input \{\s*font-size: 16px;/u);
 		expect(source).toContain('min-height: 44px');
 		expect(source).toContain('touch-action: manipulation');
 	});
