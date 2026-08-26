@@ -47,4 +47,4 @@ The component preserves the browser-native date picker. On touch-first devices i
 
 ## Styling
 
-`--worn-date-input-focus` customizes the keyboard focus outline. Its default falls through the shared `--cockpit-focus` and `--cockpit-text` tokens so the outline remains distinguishable from themed field surfaces. Border and shadow feedback continue to use the shared accent tokens.
+`--worn-date-input-focus` customizes the keyboard focus outline. Its default falls through the shared `--worn-focus` and `--worn-text` tokens so the outline remains distinguishable from themed field surfaces. Border and shadow feedback continue to use the shared accent tokens.
